@@ -1,0 +1,10 @@
+package quiz;
+
+public class Main {
+	public static void main(String[] args) {
+		QuizOneJunit test = new QuizOneJunit();
+
+		int result1 = test.square(10);
+		int result2 = test.countLetterA("University of Phayao,Thailand");
+	}
+}

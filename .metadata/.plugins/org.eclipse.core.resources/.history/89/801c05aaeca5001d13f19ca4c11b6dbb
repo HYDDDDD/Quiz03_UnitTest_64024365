@@ -1,0 +1,48 @@
+package quiz;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class asserEqual {
+//	private String word1 = new String("Kantamas");
+//	private String word2 = new String("Pokkam");
+//
+//	@Before
+//	public void setUp() {
+//		System.out.println("@Before setUp");
+//	}
+//
+//	@After
+//	public void tearDown() {
+//		System.out.println("@After tearDown");
+//	}
+//
+//	@Test
+//	public void testEqalString() {
+//		assertEquals(word1, word2);
+//	}
+
+	QuizOneJunit test = new QuizOneJunit();
+	
+
+	@After
+	public void runAfter() {
+		System.out.println("runnerAfter");
+	}
+
+	@Before
+	public void runBefore() {
+		System.out.println("runnerBefore");
+	}
+	
+	@Test
+	public void runTest01() {
+		System.out.println("test01");
+		assertEquals(test.countLetterA("Kantamas"));
+//		assertEquals();
+	}
+
+}

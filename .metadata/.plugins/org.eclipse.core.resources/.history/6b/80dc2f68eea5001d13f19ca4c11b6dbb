@@ -1,0 +1,30 @@
+package quiz;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class assertFalse {
+	QuizOneJunit test = new QuizOneJunit();
+
+	int result1 = test.square(10);
+	int result2 = test.square(5);
+
+	@After
+	public void runAfter() {
+		System.out.println("runnerAfter");
+	}
+
+	@Before
+	public void runBefore() {
+		System.out.println("runnerBefore");
+	}
+
+	@Test
+	public void runTest02() {
+		System.out.println("test02");
+		assertTrue(result1 < result2);
+	}
+}

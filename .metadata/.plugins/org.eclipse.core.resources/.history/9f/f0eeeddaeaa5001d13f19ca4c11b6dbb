@@ -1,0 +1,15 @@
+package quiz;
+
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class asserEqual {
+	private String word1 = new String("Kantamas");
+	private String word2 = new String("Pokkam");
+	
+	@Before
+	public void setUp() {
+		System.out.println("@Before setUp");
+	}
+
+}
